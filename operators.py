@@ -1,9 +1,9 @@
 #지수(거듭제곱)은 ** 을 사용
-a = 2
-b = 3
 
-# a^3
-print(a**b)
+# 2^3
+print(2**3)
+
+print(8//3)
 
 # 문자열 결합
 print("computer" + "science")
