@@ -12,4 +12,4 @@ if rad > 0 and hei > 0:
     suf = 3.14 * rad ** 2 + 3.14 * rad * hei
     print("원뿔의 넓이는 : ",suf,"입니다.")
 else : 
-    print("반지름에 양수값을 넣어주세요")
+    print("반지름과 높이의 값을 모두 양수로 입력해주세요")

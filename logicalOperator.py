@@ -20,3 +20,4 @@ print(not temp <= 27)
 
 # shor-circuit evaluation
 # 첫 번째 논리값 만으로 전체 연산 결과가 판별 가능할 때 두 번째 논리값은 확인(평가)하지 않는 기법
+
