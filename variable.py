@@ -16,3 +16,9 @@ def sort3(a, b, c):
         a, b = b, a
     if a > c:
         a, c = c, a
+    if b > c:
+        b, c = c, b
+    print(a, b, c)
+
+sort3(a, b, c)
+print("출력이후 : ", a, b, c)
