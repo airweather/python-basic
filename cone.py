@@ -77,3 +77,31 @@
 # print(vol1, "입니다")
 # print(surf1, "입니다")
 
+
+# 값의 전달
+# def rtn_cone_vol(r, h):
+#     if r>0 and h>0 :
+#         # r, h 모두 양수일 때
+#         vol = 1/3 * 3.14 * r ** 2 * h
+#         surf = 3.14 * r ** 2 + 3.14 * r * h
+#         r, h = 0, 0
+#         return vol
+#     else:
+#         # r, h가 음수일 때
+#         print("반지름과 높이 값에 양수를 입력하세요.")
+    
+# radius = 50
+# height = 100
+# print(format(rtn_cone_vol(radius, height), ">10.3f"))
+# print("함수 사용 후 ", radius, height)
+
+# 기본값
+# 매개변수에 기본값 설정
+def rtn_cone_vol_surf(r=20, h=30):
+    if r>0 and h>0 :
+        return 1/3 * 3.14 * r ** 2 * h, 3.14 * r ** 2 + 3.14 * r * h
+    else:
+        # r, h가 음수일 때
+        print("반지름과 높이 값에 양수를 입력하세요.")
+
+print(rtn_cone_vol_surf(100, 20))
