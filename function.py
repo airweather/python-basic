@@ -54,15 +54,15 @@
 
 # 값의 전달
 # 함수가 호출될 때, 값이 형식 매개변수에 전달(변수가 전달되는 것이 아님)
-x = 1
-print("x의 값은", x)
+# x = 1
+# print("x의 값은", x)
 
-def inc(x):
-    x = x + 1
-    print("x의 값은", x)
+# def inc(x):
+#     x = x + 1
+#     print("x의 값은", x)
 
-inc(x)
-print("x의 값은", x)
+# inc(x)
+# print("x의 값은", x)
 
 # 기본 매개변수
 # 함수 호출 시 매개변수가 전달되지 않을 경우 기본값이 전달되는 매개변수
@@ -83,3 +83,14 @@ print("x의 값은", x)
 # def 함수이름(매개변수 리스트, *가변 매개변수):
 #     명령 블록
 #     return 반환값 리스트
+
+def var_sum_avg(*number):
+    sum = 0
+    count = 0
+
+    for i in number:
+        sum = sum + i
+        count = count + 1
+    return sum, sum/count
+
+print(var_sum_avg(20, 25, 10, 85, 100, 150))
