@@ -39,4 +39,26 @@ for rad, hei in zip(rad_list, hei_list) :
     print("원뿔의 부피는 : ", vol, "입니다.")
     print("원뿔의 넓이는 : ",suf,"입니다.")
 
-    
+# 반환값이 없는 함수
+# def prt_con_vol(r, h):
+#     if r>0 and h>0 :
+#         vol = 1/3 * 3.14 * r ** 2 * h
+#         print("원뿔의 부피는",vol,"입니다.")
+#     else:
+#         # r, h가 음수일 때
+#         print("반지름과 높이 값에 양수를 입력하세요.")
+
+# rad = 30
+# hei = 50
+# prt_con_vol(rad, hei)
+
+# 반환값이 있는 함수
+def rtn_con_vol(r, h):
+    if r>0 and h>0 :
+        vol = 1/3 * 3.14 * r ** 2 * h
+        return vol
+    else:
+        # r, h가 음수일 때
+        print("반지름과 높이 값에 양수를 입력하세요.")
+
+print(format(rtn_con_vol(10, 20), ">20.3f"), "입니다.")
