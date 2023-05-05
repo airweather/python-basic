@@ -52,3 +52,14 @@
 # print(format(number, ">10.3f"))
 
 
+# 값의 전달
+# 함수가 호출될 때, 값이 형식 매개변수에 전달(변수가 전달되는 것이 아님)
+x = 1
+print("x의 값은", x)
+
+def inc(x):
+    x = x + 1
+    print("x의 값은", x)
+
+inc(x)
+print("x의 값은", x)
