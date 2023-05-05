@@ -5,4 +5,3 @@ temp, season = 27, "summer"
 # 교환(swap)
 # 복수 개의 변수에 할당하는 값을 맞바꿈
 temp, season = season, temp
-
