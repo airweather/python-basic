@@ -16,3 +16,9 @@ base = int(input("출력할 단을 입력하세요 : "))
 while i <=9:
     print(base, "X", i, "=", base * i)
     i = i+1
+
+# 계수 제어 반복(for loop)
+
+hei_list = [1, 4, 14, 26, 31]
+for hei in hei_list :
+    print(hei)
