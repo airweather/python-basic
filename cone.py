@@ -64,15 +64,16 @@
 # print(format(rtn_cone_vol(10, 20), ">20.3f"), "입니다.")
 
 
-def rtn_cone_vol_surf(r, h):
-    if r>0 and h>0 :
-        vol = 1/3 * 3.14 * r ** 2 * h
-        surf = 3.14 * r ** 2 + 3.14 * r * h
-        return vol, surf
-    else:
-        # r, h가 음수일 때
-        print("반지름과 높이 값에 양수를 입력하세요.")
+# def rtn_cone_vol_surf(r, h):
+#     if r>0 and h>0 :
+#         vol = 1/3 * 3.14 * r ** 2 * h
+#         surf = 3.14 * r ** 2 + 3.14 * r * h
+#         return vol, surf
+#     else:
+#         # r, h가 음수일 때
+#         print("반지름과 높이 값에 양수를 입력하세요.")
 
-vol1, surf1 = (rtn_cone_vol_surf(50, 100))
-print(vol1, "입니다")
-print(surf1, "입니다")
+# vol1, surf1 = (rtn_cone_vol_surf(50, 100))
+# print(vol1, "입니다")
+# print(surf1, "입니다")
+
