@@ -18,3 +18,6 @@ class BMI :
             return "정상"
         else :
             return "저체중"
+
+person1 = BMI("홍길동",40,78,182)
+print(person1.name + "님(" +str(person1.age)+"세)의 BMI 수치는", person1.get_BMI(), "결과는",person1.get_status(), "입니다.")

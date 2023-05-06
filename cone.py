@@ -117,3 +117,8 @@ class Cone :
     def get_surf(self) :
         return 3.14 * self.r ** 2 + 3.14 * self.r * self.h
 
+unit_cone = Cone()
+big_cone = Cone(50, 100)
+
+print("단위 원뿔의 겉넓이와 부피는", unit_cone.get_surf(), unit_cone.get_vol(), "입니다.")
+print("큰 원뿔의 겉넓이와 부피는", big_cone.get_surf(), big_cone.get_vol(), "입니다.")
