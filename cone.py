@@ -122,3 +122,24 @@ big_cone = Cone(50, 100)
 
 print("단위 원뿔의 겉넓이와 부피는", unit_cone.get_surf(), unit_cone.get_vol(), "입니다.")
 print("큰 원뿔의 겉넓이와 부피는", big_cone.get_surf(), big_cone.get_vol(), "입니다.")
+
+class pCone :
+    def __init__(self, radius = 20, height = 30):
+        if radius > 0 and height > 0 :
+            self.__r = radius
+            self.__h = height
+
+    def get_vol(self) :
+        return 1/3 * 3.14 * self.__r ** 2 * self.__h
+    def get_surf(self) :
+        return 3.14 * self.__r ** 2 + 3.14 * self.__r * self.__h
+    def get_radius(self) :
+        return self.__r
+    def get_height(self) :
+        return self.__h
+    def set_radius(self, radius) :
+        if radius > 0 :
+            self.__r = radius
+    def set_height(self, height) :
+        if height > 0 :
+            self.__h = height
