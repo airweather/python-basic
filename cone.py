@@ -97,11 +97,23 @@
 
 # 기본값
 # 매개변수에 기본값 설정
-def rtn_cone_vol_surf(r=20, h=30):
-    if r>0 and h>0 :
-        return 1/3 * 3.14 * r ** 2 * h, 3.14 * r ** 2 + 3.14 * r * h
-    else:
-        # r, h가 음수일 때
-        print("반지름과 높이 값에 양수를 입력하세요.")
+# def rtn_cone_vol_surf(r=20, h=30):
+#     if r>0 and h>0 :
+#         return 1/3 * 3.14 * r ** 2 * h, 3.14 * r ** 2 + 3.14 * r * h
+#     else:
+#         # r, h가 음수일 때
+#         print("반지름과 높이 값에 양수를 입력하세요.")
 
-print(rtn_cone_vol_surf(100, 20))
+# print(rtn_cone_vol_surf(100, 20))
+
+# class
+class Cone :
+    def __init__(self, radius = 20, height = 30):
+        self.r = radius
+        self.h = height
+
+    def get_vol(self) :
+        return 1/3 * 3.14 * self.r ** 2 * self.h
+    def get_surf(self) :
+        return 3.14 * self.r ** 2 + 3.14 * self.r * self.h
+
