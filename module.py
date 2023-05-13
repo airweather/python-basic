@@ -57,3 +57,12 @@ dir()
 # sample(sequence) : 랜덤하게 여러 개의 원소를 선택
 # shuffle(sequence) : 시퀀스의 순서를 랜덤하게 섞음
 
+# 두 변의 길이 a, b와 끼인각 alpha인 삼각형의 넓이를 구하는 프로그램
+import math
+from math import sin
+
+a, b = 10, 20
+# radians() : 각도를 라디안(호도법)으로 변환
+area = 1/2 * a * b * sin(math.radians(60))
+print(area)
+
