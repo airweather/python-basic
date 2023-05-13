@@ -58,11 +58,16 @@ dir()
 # shuffle(sequence) : 시퀀스의 순서를 랜덤하게 섞음
 
 # 두 변의 길이 a, b와 끼인각 alpha인 삼각형의 넓이를 구하는 프로그램
-import math
-from math import sin
+# import math
+# from math import sin
 
-a, b = 10, 20
-# radians() : 각도를 라디안(호도법)으로 변환
-area = 1/2 * a * b * sin(math.radians(60))
-print(area)
+# a, b = 10, 20
+# # radians() : 각도를 라디안(호도법)으로 변환
+# area = 1/2 * a * b * sin(math.radians(60))
+# print(area)
+
+# time 모듈
+# 에포크 시간을 얻어 다양한 형식으로 표시하는 기능 제공
+# 유닉스 에포크 : 1970-1-1 00:00:00 GMT
+
 
