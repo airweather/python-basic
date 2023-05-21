@@ -5,7 +5,7 @@
 # 개별 원소의 값을 수정, 추가, 삭제 가능
 # 원소(element)의 나열을 저장할 수 있는 시퀀스 타입 중 하나
 
-['a', 'b', 1, 3]
+# ['a', 'b', 1, 3]
 
 # 리스트 생성 자동화
 # 리스트 내 원소에 규칙성이 있는 경우 생성 자동화를 위해 함수 사용 가능
@@ -15,6 +15,19 @@
 # a를 생략할 경우 0부터 시작
 # k를 생략할 경우 1씩 증가
 
-a = range(1, 10, 2)
+# a = range(1, 10, 2)
 
-print(a)
+# print(a)
+
+# 2차원 리스트 생성
+# list([원소 시퀀스1], [원소 시퀀스2], [원소 시퀀스n])
+# [[원소 시퀀스1], [원소 시퀀스2], [원소 시퀀스n]]
+
+# 2차원 리스트 동적 생성
+# distance = []
+# for i in range(nRows):
+#     row = []
+#     for j in range(nColumns):
+#         row.append(rd.randint(0, 99))
+#     distance.append(row)
+# print(distance)
