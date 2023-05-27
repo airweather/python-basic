@@ -2,10 +2,11 @@ class Tic_Tac_Toe:
 
     # 게임판 생성
     def __init__(self) :
-
+        # 전역변수로 생성
+        self.board = []
     # 게임판 초기화
     def create_board(self) :
-
+        
     # 첫 플레이어 선택
     def select_first_player(self) :
 
