@@ -6,7 +6,11 @@ class Tic_Tac_Toe:
         self.board = []
     # 게임판 초기화
     def create_board(self) :
-        
+        for i in range(3):
+            row = []
+            for j in range(3):
+                row.append('*')
+                self.board.append(row)
     # 첫 플레이어 선택
     def select_first_player(self) :
 
