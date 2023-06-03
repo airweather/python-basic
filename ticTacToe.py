@@ -21,7 +21,8 @@ class Tic_Tac_Toe:
 
     # 기호 표시
     def mark_spot(self, row, col, player):
-
+        self.board[row][col] = player
+        
     # 승리 상태 확인
     def is_win(self, player):
     
