@@ -25,10 +25,15 @@ class Tic_Tac_Toe:
         
     # 승리 상태 확인
     def is_win(self, player):
-    
+
+        n = len(self.board)
         # 행 확인
+        for i in range(n):
+            for j in range(n):
+                self.board[i][j] != player
         # 열 확인
         # 대각선 확인
+        return
 
     # 잔여 빈칸 여부 확인
     def is_board_full(self):
