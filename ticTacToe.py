@@ -31,6 +31,10 @@ class Tic_Tac_Toe:
         for i in range(n):
             for j in range(n):
                 self.board[i][j] != player
+                win = False
+                break
+            if win == True:
+                return win
         # 열 확인
         # 대각선 확인
         return
