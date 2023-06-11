@@ -39,12 +39,11 @@ class Tic_Tac_Toe:
         for i in range(n):
             win = True
             for j in range(n):
-                self.board[i][j] != player
+                self.board[j][i] != player
                 win = False
                 break
             if win == True:
                 return win
-
         # 대각선 확인
         return
 
