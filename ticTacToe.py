@@ -30,18 +30,18 @@ class Tic_Tac_Toe:
         # 행 확인
         for i in range(n):
             for j in range(n):
-                self.board[i][j] != player
-                win = False
-                break
+                if self.board[i][j] != player:
+                    win = False
+                    break
             if win == True:
                 return win
         # 열 확인
         for i in range(n):
             win = True
             for j in range(n):
-                self.board[j][i] != player
-                win = False
-                break
+                if self.board[j][i] != player:
+                    win = False
+                    break
             if win == True:
                 return win
         # 대각선 확인
