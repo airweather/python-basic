@@ -63,6 +63,11 @@ class Tic_Tac_Toe:
         return True
     # 플레이어 변경
     def next_player(self, player):
+        if player == 'O':
+            return 'X'
+        else:
+            return 'O'
+        
 
     # 현재 게임판 상태 출력
     def show_board(self):
